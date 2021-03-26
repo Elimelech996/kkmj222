@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>Working channel zapper</title>
+		<link href="chan.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="opera_keys.js"></script>
+		<script type="text/javascript" src="chan.js"></script>
+	</head>
+	<body onload="init()">
+		<script type="text/javascript">
+			function init()
+			{
+				/* Setup channel list */
+				add (01, "http://46.19.226.132:8000/play/a03w", "KSPORT1");
+                add (02, "http://46.19.226.132:8000/play/a03x", "KSPORT2");
+				//addChannelList(1,2);
+				addChannelList();
+				/* Select initial stream */
+				start(1);
+			}
+		</script>
+
+		<div id="channel_popup"></div>
+		<div id="channel_info"></div>
+		<div id="channel_menu"></div>
+	</body>
+</html>
